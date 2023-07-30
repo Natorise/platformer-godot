@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctbqm63fql5ob"]
+
+[ext_resource type="Script" path="res://Scripts/FPSCounter.gd" id="1_8uuc4"]
+[ext_resource type="Script" path="res://Scripts/LivesCounter.gd" id="2_o455h"]
+
+[node name="GUI" type="CanvasLayer"]
+
+[node name="FPSCounter" type="RichTextLabel" parent="."]
+offset_right = 256.0
+offset_bottom = 40.0
+text = "FPS"
+script = ExtResource("1_8uuc4")
+
+[node name="LivesCounter" type="RichTextLabel" parent="."]
+offset_top = 41.0
+offset_right = 256.0
+offset_bottom = 81.0
+text = "Lives"
+script = ExtResource("2_o455h")

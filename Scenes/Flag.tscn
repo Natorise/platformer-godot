@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://boqp3vb7j2xvh"]
+
+[ext_resource type="Texture2D" uid="uid://c73xcomonmhe0" path="res://Assets/flag.png" id="1_lp268"]
+
+[node name="Flag" type="StaticBody2D" groups=["Flag"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lp268")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-28, 32, -28, -29, 32, -8, -23, 5, -23, 32)
